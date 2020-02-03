@@ -1,8 +1,8 @@
-variable "aws_access_key" {}
+variable "aws_access_key" {AKIAQAL5536T2FV6OJOU}
 
-variable "aws_secret_key" {}
+variable "aws_secret_key" {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}
 
-variable "region" {}
+variable "region" {us-west-2}
 
 variable "account_id" {}
 
