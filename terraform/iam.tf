@@ -16,7 +16,7 @@ resource "aws_iam_role" "lambda_apigateway_iam_role" {
   ]
 }
 #POLICY
-}
+#}
   #role = "aws_iam_role.lambda_apigateway_iam_role.id"
 
  # policy = <<POLICY
@@ -49,4 +49,5 @@ resource "aws_iam_role" "lambda_apigateway_iam_role" {
       "Resource": "*"
     }
   ]
+ }
 }
