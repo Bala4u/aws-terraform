@@ -4,7 +4,7 @@ variable "aws_secret_key" {Tu8Gpb7rguLf2gJOPP6cGiwDTTfycnoRMGsqt0nE}
 
 variable "region" {us-west-2}
 
-variable "account_id" {}
+variable "account_id" {000800972711}
 
 variable "lambda_payload_filename" {
   default = "../helloworldjava/target/helloworldjava-0.1.0-SNAPSHOT.jar"
