@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "hello_world_function" {
+resource "aws_lambda_function" "Helloworld_lambda" {
   filename      = var.lambda_payload_filename
   function_name = "hello_function"
 
