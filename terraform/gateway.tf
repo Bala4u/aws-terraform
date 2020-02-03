@@ -26,7 +26,7 @@ resource "aws_api_gateway_integration" "hello_world_integration" {
   credentials             = "arn:aws:iam::${var.account_id}:role/${aws_iam_role.lambda_apigateway_iam_role.name}"
 }
 
-resource "aws_api_gateway_method_response" ""hello_world_method_response"" {
+resource "aws_api_gateway_method_response" "hello_world_method_response" {
   rest_api_id = "aws_api_gateway_rest_api.hello_world_api.id"
   resource_id = "aws_api_gateway_resource.hello_world_api_gateway.id"
   http_method = "aws_api_gateway_method.hello_world_method.http_method"
