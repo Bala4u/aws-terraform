@@ -1,11 +1,11 @@
 variable "aws_access_key" {
   # set aws access key
-  default = "AKIAQAL5536T2FV6OJOU"
+  default = "AKIA2MM4TOJXYQLJYHBP"
 }
 
 variable "aws_secret_key" {
   # set aws secret key
-  default = "Tu8Gpb7rguLf2gJOPP6cGiwDTTfycnoRMGsqt0nE/"
+  default = "ZIozf4CBtBjUMV1N5ywY9WV7EHTErEg6IH8GchD/"
 }
 
 variable "region" {
@@ -14,7 +14,7 @@ variable "region" {
 }
 
 variable "account_id" {
-default = "000800972711"
+default = "7138-2987-2239"
 }
 
 
