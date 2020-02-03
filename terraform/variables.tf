@@ -13,6 +13,11 @@ variable "region" {
   default = "us-west-2"
 }
 
+variable "account_id" {
+default = "000800972711"
+}
+
+
 variable "lambda_payload_filename" {
   default = "../helloworldjava/target/helloworldjava-0.1.0-SNAPSHOT.jar"
 }
