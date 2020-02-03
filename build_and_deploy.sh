@@ -14,5 +14,6 @@ cd $CODEBUILD_SRC_DIR/terraform
 cd ..
 printf '\n\nStarting the Terraforming!\n\n'
 cd terraform
-terraform plan -out=plan.out
-terraform apply plan.out
+terraform init
+terraform plan 
+terraform apply -auto-approve
