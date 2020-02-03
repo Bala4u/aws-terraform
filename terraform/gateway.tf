@@ -6,7 +6,7 @@ resource "aws_api_gateway_rest_api" "hello_world_api" {
 resource "aws_api_gateway_resource" "hello_world_api_gateway" {
   rest_api_id = "aws_api_gateway_rest_api.hello_world_api.id"
   parent_id   = "aws_api_gateway_rest_api.hello_world_api.root_resource_id"
-  path_part   = "var.api_path"
+  path_part   = var.api_path
 }
 
 resource "aws_api_gateway_method" "hello_world_method" {
