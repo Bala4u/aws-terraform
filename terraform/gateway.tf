@@ -39,7 +39,7 @@ resource "aws_api_gateway_method_response" "200" {
 }
 
 resource "aws_api_gateway_integration_response" "hello_world_integration_response" {
-  depends_on  = ["aws_api_gateway_integration.hello_world_integration"]
+  depends_on  = "aws_api_gateway_integration.hello_world_integration"
   rest_api_id = "aws_api_gateway_rest_api.hello_world_api.id"
   resource_id = "aws_api_gateway_resource.hello_world_api_gateway.id"
   http_method = "aws_api_gateway_method.hello_world_method.http_method"

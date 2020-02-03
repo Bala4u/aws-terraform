@@ -1,10 +1,17 @@
-variable "aws_access_key" {AKIAQAL5536T2FV6OJOU}
+variable "aws_access_key" {
+  # set aws access key
+  default = "AKIAQAL5536T2FV6OJOU"
+}
 
-variable "aws_secret_key" {Tu8Gpb7rguLf2gJOPP6cGiwDTTfycnoRMGsqt0nE}
+variable "aws_secret_key" {
+  # set aws secret key
+  default = "Tu8Gpb7rguLf2gJOPP6cGiwDTTfycnoRMGsqt0nE/"
+}
 
-variable "region" {us-west-2}
-
-variable "account_id" {000800972711}
+variable "region" {
+  # set aws region
+  default = "us-west-2"
+}
 
 variable "lambda_payload_filename" {
   default = "../helloworldjava/target/helloworldjava-0.1.0-SNAPSHOT.jar"
