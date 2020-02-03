@@ -8,3 +8,6 @@ phases:
       - chmod 700 $CODEBUILD_SRC_DIR/build_and_deploy.sh
       - cd $CODEBUILD_SRC_DIR/
       - ./build_and_deploy.sh
+      - export TerraformVersion=0.12.20 && cd /tmp && curl -o terraform.zip https://releases.hashicorp.com/terraform/${TerraformVersion}/terraform_${TerraformVersion}_linux_amd64.zip && unzip terraform.zip && mv terraform /usr/bin
+      - terraform --version
+      - cd $CODEBUILD_SRC_DIR/terraform
